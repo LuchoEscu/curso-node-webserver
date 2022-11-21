@@ -20,18 +20,18 @@ const nombreTitulo = () => {
   }
 }
 
-app.get('/', (req, res) => res.render('home', nombreTitulo()));
+// app.get('/', (req, res) => res.render('home', nombreTitulo()));
 
-app.get('/generic', (req, res) => {
-  res.render('generic', nombreTitulo())
-  // res.sendFile(__dirname + '/public/generic.html');
-});
-app.get('/elements', (req, res) => {
-  res.render('elements', nombreTitulo())
-  // res.sendFile(__dirname + '/public/elements.html');
-});
+// app.get('/generic', (req, res) => {
+//   res.render('generic', nombreTitulo())
+//   // res.sendFile(__dirname + '/public/generic.html');
+// });
+// app.get('/elements', (req, res) => {
+//   res.render('elements', nombreTitulo())
+//   // res.sendFile(__dirname + '/public/elements.html');
+// });
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/public/404.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 // app.get('/hola-mundo', (req, res) => {
